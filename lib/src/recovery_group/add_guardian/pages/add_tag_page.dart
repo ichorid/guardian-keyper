@@ -74,7 +74,7 @@ class AddTagPage extends StatelessWidget {
                   text: 'Continue',
                   onPressed: () => controller.addGuardianToGroup().then(
                     (_) {
-                      Amplitude.getInstance().logEvent('Finish AddGuardian');
+                      Amplitude.getInstance().logEvent('AddGuardian Finish');
                       Navigator.of(context).pop();
                     },
                   ),
